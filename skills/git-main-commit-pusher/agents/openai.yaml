@@ -1,0 +1,3 @@
+interface:
+  display_name: "Git Main Commit Pusher"
+  short_description: "Commit local changes and push safely to origin/main"

@@ -1,0 +1,3 @@
+interface:
+  display_name: "Gitignore Large File Guard"
+  short_description: "Strengthen .gitignore and detect large file push risks"
