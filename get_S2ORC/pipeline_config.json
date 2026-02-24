@@ -1,0 +1,36 @@
+{
+  "paths": {
+    "raw_dir": "data/raw",
+    "processed_dir": "data/processed",
+    "index_dir": "data/index"
+  },
+  "download": {
+    "datasets": "citations",
+    "max_files": 1,
+    "prefer_diff": false
+  },
+  "build": {
+    "target_papers": 20000,
+    "recent_years": 8,
+    "min_year": null,
+    "construction_mode": "graph_api_strict",
+    "allow_legacy_fallback": false,
+    "max_citation_edges_scan": 0,
+    "encoder_chunk_tokenizer_path": "/root/autodl-tmp/CodeFuse-CGM/encoder/specter2_base",
+    "license_allow": "odc-by,unknown",
+    "index_format": "parquet_neighbors",
+    "direction": "outgoing",
+    "max_neighbors": 80,
+    "valid_ratio": 0.05
+  },
+  "subgraph": {
+    "num_subgraphs": 100,
+    "min_nodes_per_graph": 8,
+    "max_nodes_per_graph": 20,
+    "min_hops": 2,
+    "max_hops": 3,
+    "max_attempts_per_graph": 30,
+    "random_seed": 42,
+    "graph_file_prefix": "citation_subgraph"
+  }
+}

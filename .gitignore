@@ -1,0 +1,81 @@
+# OS / editor
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+.python-version
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.hypothesis/
+.tox/
+.nox/
+
+# Environment / secrets
+.env
+.env.*
+*.pem
+*.key
+
+# Build / temp
+build/
+dist/
+tmp/
+temp/
+*.tmp
+
+# Logs
+*.log
+logs/*.log
+
+# Caches
+.cache/
+**/.cache/
+
+# TensorBoard / training outputs
+runs/
+tb/
+outputs/
+tests_smoke/out/
+tests_smoke/tb/
+
+# Model weights and checkpoints
+*.pt
+*.pth
+*.ckpt
+*.bin
+*.h5
+*.onnx
+*.safetensors
+*.index.json
+adapter_model.safetensors
+adapter.pth
+
+# Local model folders (large, machine-specific)
+LLM/
+encoder/
+
+# Data artifacts (generated / downloaded)
+data/raw/
+data/processed/
+data/index/
+data/meta/download_manifest.json
+data/meta/latest_datasets.json
+data/meta/releases.json
+data/meta/subgraph_runtime_config.json
+data/meta/train_ready_paths.json
+
+# Keep selected small sample/meta files if needed for reproducibility
+!data/meta/cite_pretrain_smoke.json
+!data/meta/cite_pretrain_smoke_qwenenc.json
+!data/meta/subgraph_config_round_1.json
+
+# Keep docs/readme files in ignored output dirs if intentionally tracked
+!outputs/README.md
+!tb/README.md
+!logs/README.md

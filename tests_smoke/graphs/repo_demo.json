@@ -1,0 +1,9 @@
+{
+  "nodes": [
+    {"id": "n1", "nodeType": "File", "filePath": "src", "fileName": "paper.py", "text": "def summarize(x): return x"},
+    {"id": "n2", "nodeType": "Function", "name": "summarize", "header": "def", "text": "def summarize(x): return x", "comment": "summary"}
+  ],
+  "edges": [
+    {"source": "n1", "target": "n2"}
+  ]
+}

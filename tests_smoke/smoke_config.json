@@ -1,0 +1,83 @@
+{
+  "graph_dir": "./tests_smoke/graphs",
+  "train_files": "./tests_smoke/splits/train.jsonl",
+  "valid_files": "./tests_smoke/splits/valid.jsonl",
+  "output_dir": "./tests_smoke/out/",
+  "tb_dir": "./tests_smoke/tb/",
+
+  "embedding_dim": 32,
+  "load_pretrained_encoder": false,
+  "pretrained_encoder_path": "hf-internal-testing/tiny-random-bert",
+
+  "load_pretrained_adapter": false,
+  "pretrained_adapter_path": null,
+  "adapter_hidden_dim": 64,
+  "adapter_num_layers": 1,
+  "adapter_num_heads": 8,
+
+  "load_pretrained_tokenizer": true,
+  "pretrained_tokenizer_path": "hf-internal-testing/tiny-random-gpt2",
+
+  "pretrained_model_path": "hf-internal-testing/tiny-random-gpt2",
+  "self_defined": false,
+  "framework_type": "smoke",
+  "model_type": "Qwen",
+
+  "pretrained_lora_path": null,
+  "quantization": null,
+
+  "mode": "eal",
+  "task": "issue_fix",
+  "use_chat": false,
+  "use_adj": false,
+
+  "peft": null,
+  "lora_rank": 4,
+  "lora_alpha": 8,
+  "lora_dropout": 0.05,
+  "lora_modules": "all-linear",
+
+  "enc_peft": null,
+  "enc_lora_rank": 4,
+  "enc_lora_alpha": 8,
+  "enc_lora_dropout": 0.05,
+  "enc_lora_modules": "all-linear",
+
+  "graph_pad_token": "<|graph_pad|>",
+  "graph_pad_id": 0,
+  "graph_token_num": 128,
+
+  "learning_rate": 1e-4,
+  "min_lr": 1e-7,
+  "weight_decay": 0.0,
+  "lr_scheduler_type": "cosine",
+
+  "gradient_accumulation_steps": 1,
+  "num_warmup_steps": 0,
+  "adapter_warmup": false,
+  "adapter_warmup_steps": 10,
+  "num_train_epochs": 1,
+
+  "data_split": "0.98,0.02",
+  "max_train_steps": 1,
+  "max_train_samples": 1,
+  "max_valid_samples": 1,
+  "per_device_train_batch_size": 1,
+  "per_device_eval_batch_size": 1,
+
+  "seed": 42,
+  "seq_length": 512,
+  "log_interval": 1,
+
+  "step_checkpointing": false,
+  "checkpointing_steps": 100,
+  "step_evaluation": false,
+  "evaluation_steps": 100,
+  "epoch_evaluation": false,
+  "epoch_checkpointing": false,
+
+  "early_stopping": false,
+  "early_stopping_stall_num": 2,
+
+  "attn_implementation": "eager"
+}

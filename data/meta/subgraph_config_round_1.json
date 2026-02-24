@@ -1,0 +1,22 @@
+{
+  "num_subgraphs": 50000,
+  "min_nodes_per_graph": 8,
+  "max_nodes_per_graph": 20,
+  "min_hops": 2,
+  "max_hops": 3,
+  "max_attempts_per_graph": 30,
+  "candidate_multiplier": 4.0,
+  "max_total_attempts_factor": 8.0,
+  "enrich_node_cap": 500000,
+  "force_fill_to_target": true,
+  "topup_rounds": 5,
+  "topup_attempts_per_missing": 20,
+  "allow_bootstrap_repeats": false,
+  "cleanup_scanned_raw": true,
+  "round_fetch_until_target": true,
+  "round_files_start": 1,
+  "round_files_step": 1,
+  "enable_graph_api_fallback": false,
+  "random_seed": 42,
+  "graph_file_prefix": "citation_subgraph"
+}

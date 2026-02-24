@@ -1,0 +1,1 @@
+{"repo":"repo_demo.json","language":"python","prompt":"请阅读引文网络节点并给出摘要策略","answer":"先定位核心节点，再生成结构化综述。","task":"issue_fix"}
